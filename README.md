@@ -84,3 +84,21 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDeri
 [cc-by-nc-nd]: http://creativecommons.org/licenses/by-nc-nd/4.0/
 [cc-by-nc-nd-image]: https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png
 [cc-by-nc-nd-shield]: https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg
+
+## 🤝 Common Sense
+
+- **Share it?** Yes, please do! The more people who can learn from this, the better.
+
+- **Use it?** Yes, go ahead! But please give credit where it's due and link back to this repository.
+
+- **Remix it?** No, please don't. This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which means you can share it but not modify it or use it for commercial purposes.
+
+- **Sell it?** No, please don't. This work is not for sale and cannot be used for commercial purposes.
+
+- **Claim it?** No, please don't. This work is created by Nighteye (me) and should be credited as such.
+
+- **Have fun with it!** I hope this guide helps you on your coding journey and inspires you to create amazing projects. Happy coding!
+
+<p align="center">
+  Made with ☕ sleep deprivation and 🩹 back pain by <b>Nighteye</b>
+</p>
