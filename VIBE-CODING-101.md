@@ -14,6 +14,8 @@
 > - Find a gap that they are missing, and try to improve or work on that
 > - Find your vibe and stick to it, don't try to copy others, be original and creative  
 
+---
+
 ## Designing your website
 > Before even starting a single line of code, explore designs. 
 > Where to find designs?
@@ -52,10 +54,14 @@
 > - You can use tools like [Figma](https://www.figma.com/), [Sketch](https://www.sketch.com/), [Adobe XD](https://adobexdplatform.com/), [Google Stitch](https://stitch.withgoogle.com/) etc. to create your wireframe or mockup.
 > - You can also use pen and paper to create your wireframe or mockup.
 
+---
+
 ## Setting up your development environment
 > Once you have your design ready, it's time to set up your development environment.
 > - You can use any code editor you like, but I recommend using [Visual Studio Code](https://code.visualstudio.com/).
 > - You can also use other code editors like [Sublime Text](https://www.sublimetext.com/), [Atom](https://atom-editor.cc/), etc. but I recommend using Visual Studio Code because of its features and extensions that can help you vibe code and create beautiful websites.
+
+---
 
 # Tools and Technologies
 > - [React](https://reactjs.org/): A JavaScript library for building user interfaces. 
@@ -64,6 +70,8 @@
 > - [Git](https://git-scm.com/): A version control system to manage your code and collaborate with others.
 > - [GitHub](https://github.com): A platform for hosting and collaborating on Git repositories.
 > - [Figma](https://www.figma.com/): A design tool for creating wireframes, mockups, and prototypes.
+
+---
 
 ## AI Tools [Edited by AI]
 > - Choose the right AI tools to help you with your coding and design process. Some popular AI tools for web development include:
@@ -80,6 +88,8 @@
 >[!TIP]
 > Don't just start with coding right away, Plan your website and design with AI Tools, once everything is explained to the AI, and the context is clear, then you can start coding. This will save you a lot of time and effort in the long run.
 
+---
+
 ## Installing dependencies [Edited by AI]
 > Once you have your development environment set up, it's time to install the necessary dependencies for your project. You can use npm or yarn to install the dependencies. For example, to create a new React project with Vite and Tailwind CSS, you can run the following commands:
 ```bash
@@ -92,6 +102,8 @@ npm install
 npm run dev
 ```
 > This will start the development server and you can view your website at http://localhost:3000.
+
+---
 
 ## Setting up Tailwind CSS
 > Installing Tailwind CSS v4 with React and Vite:
@@ -131,6 +143,8 @@ export default defineConfig({
 ```
 
 > Now you can start building your website by creating components and adding styles using Tailwind CSS. You can also use the AI tools to help you with code generation and design assistance as you build your website.
+
+---
 
 ## Building your website
 > Before starting to code, it's important to give the AI tool(s) a persona and a context to work with. This will help the AI tool understand your requirements and generate code that is more relevant to your needs. For example, you can give the AI tool the following persona and context:
@@ -331,6 +345,8 @@ placeholder comments — write every component in full.
 > This was just the initial prompt to guide the AI to generate the website, to see the whole chat you can use this [link](https://claude.ai/share/e9f67e3b-2e5b-489f-aad0-3dcf86e59876). Once you get the initial code, start adding components and features one by one. Don't try to do everything at once, this will help you to focus on one thing at a time and also make it easier to debug and test your code. 
 
 > I used Claude to generate the whole website in this case, but you can also use Google Gemini for the initial code generation and then switch to Claude for any further improvements and optimizations. 
+
+---
 
 ## Debugging the Website
 > Once the basic website is ready, there will be a lot of bugs and issues which you will need to fix manually. This is where your coding skills and knowledge will come into play. You can use the AI tools to help you with debugging and optimizing your code, but always make sure to understand the code and the logic behind it before using it in your projects. You can also use browser developer tools to inspect the elements and debug any issues that may arise.
