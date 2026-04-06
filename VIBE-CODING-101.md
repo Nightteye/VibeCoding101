@@ -144,6 +144,28 @@ export default defineConfig({
 
 ---
 
+## The Iteration Loop (How to talk to the AI)
+> Vibe coding is a conversation, not a vending machine. You will rarely get perfect code on the first prompt. The secret to building fast is knowing how to iterate.
+
+**Step 1: The "Micro-Prompt"**
+Never ask the AI to build a whole page at once. Ask for one section (e.g., "Build the Hero section"). Once it looks good, lock it in and ask for the next section. This way, you can give feedback and course-correct after each section, rather than realizing at the end that the whole page is wrong.
+
+**Step 2: The "Fix the Red Squiggles" Technique**
+When you get an error, do not try to fix it yourself manually. Copy the exact error from your console or terminal, paste it to the AI, and say:
+> *"I am getting this error when running the dev server: [Paste Error]. Give me the fully updated file with the fix."* 
+
+**Step 3: The "Zip & Move" (For Complex Bugs)**
+If Gemini or Claude starts going in circles and breaking things that used to work, the context window is probably confused.
+1. Download or zip your current `src` folder.
+2. Open a **brand new chat**.
+3. Upload the zip and say: *"Here is my current codebase. The issue is [X]. Review the whole structure and fix the bug."*
+
+> [!TIP-1]
+> Always keep your prompts specific and actionable. The more specific you are, the better the AI can help you. Avoid vague prompts like "Make it better" or "Fix the bugs". Instead, say "The Hero section's animation is too slow. Make it faster and more dynamic." or "I am getting a 'Module not found' error for the Videos.jsx file. Please fix it."
+
+> [!TIP-2]
+> Google Gemini have a lower context window than Claude (This is from my personal experience, I can be wrong about this.), after you have the basic structure and code ready, switch to Claude for any further improvements and optimizations. Claude can handle a larger context window, so you can have a more detailed conversation about your code and design.
+
 ## Building your website
 ---
 > Before starting to code, it's important to give the AI tool(s) a persona and a context to work with. This will help the AI tool understand your requirements and generate code that is more relevant to your needs. For example, you can give the AI tool the following persona and context: [Persona Prompt](Prompt-Library/Website-Builder/Persona-Prompt.md)
@@ -272,8 +294,51 @@ You can find the prompt I used to build this website here: [Nowhere Fast Prompt]
 
 ---
 
+## Deploying the Website
+> Now, that you have your website ready with all the bugs fixed and everything working perfectly, it's tome to deploy your website and make it live. You can use platforms like Vercel, Netlify, GitHub Pages, etc. to deploy your website for free. These platforms provide easy integration with GitHub, so you can just push your code to GitHub and connect your repository to the deployment platform. Once connected, the platform will automatically build and deploy your website whenever you push new changes to the repository.
+
+>[!TIP]
+> I personally use Vercel for deployment, it's very easy to use and provides a lot of features for free. You can also use Netlify, it's also a great platform for deployment. Both platforms provide continuous deployment, so you can just push your code to GitHub and the platform will take care of the rest.
+
+### Steps to Deploy (Vercel)
+
+1. Push your code to GitHub.
+2. Go to Vercel and sign up for an account if you don't have one already.
+3. Click on "New Project" and select your GitHub repository.
+4. Follow the prompts to configure your deployment settings (you can usually leave these as default for a React + Vite project).
+5. Click "Deploy" and wait for the deployment process to complete. Once it's done, you will get a live URL for your website. You can share this URL with others and also use it for your portfolio or any other purpose.
+
+---
+
+### Steps to Deploy (Netlify)
+1. Push your code to GitHub.
+2. Go to Netlify and sign up for an account if you don't have one already.
+3. Click on "New site from Git" and select your GitHub repository.
+4. Follow the prompts to configure your deployment settings (you can usually leave these as default for a React + Vite project).
+5. Click "Deploy site" and wait for the deployment process to complete. Once it's done, you will get a live URL for your website. You can share this URL with others and also use it for your portfolio or any other purpose.
+
+---
+
+### Steps to Deploy (GitHub Pages)
+1. Push your code to GitHub.
+2. Go to your repository on GitHub and click on "Settings".
+3. Scroll down to the "GitHub Pages" section and select the branch you want to deploy from (usually "main" or "master").
+4. Click "Save" and wait for the deployment process to complete. Once it's done, you will get a live URL for your website (usually in the format `https://yourusername.github.io/yourrepository`). You can share this URL with others and also use it for your portfolio or any other purpose.
+
 >[!NOTE]
-> The guide has not been fully completed yet, I will be adding more sections and tips as I go along. If you have any suggestions or resources that you think would be helpful, please feel free to share them with me. This message is temporary and will be removed once the guide is fully completed. You may see this message in future too, once the min guide is complete this message will be removed and the guide will be updated with more sections and tips.
+> Use GitHub Pages if you want a simple and free hosting solution for your website, but keep in mind that it has some limitations (e.g., it only supports static sites, it does not support server-side rendering, etc.). If you need more features and flexibility, I recommend using Vercel or Netlify for deployment.
+
+---
+
+## 🚀 Show Off Your Vibe
+Did you build something awesome using this guide? I want to see it!
+* **Star this repo** if it helped you out.
+* Open an Issue/PR if you want to contribute improvements to this guide or share your own tips and tricks. I'll personally review and merge every single one.
+* Tag me on [Twitter/X](https://x.com/perhaps_aadi) with screenshots of your live site.
+* Open an Issue to submit your site to the "Hall of Fame" section!
+
+Keep building, keep iterating, and keep the vibe alive.
+
 
 *Thank You*
 
