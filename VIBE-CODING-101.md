@@ -105,7 +105,7 @@ npm run dev
 
 ---
 
-## Setting up Tailwind CSS
+## Setting up Tailwind CSS [Edited by AI]
 > Installing Tailwind CSS v4 with React and Vite:
 ```bash
 npm install tailwindcss @tailwindcss/vite
@@ -138,8 +138,6 @@ export default defineConfig({
 ├── package.json
 ├── vite.config.js <-- This is where you configure your Vite plugins and Tailwind CSS is also loaded from here in v4.>
 └── README.md
->[!NOTE]
-> Edited by AI
 ```
 
 > Now you can start building your website by creating components and adding styles using Tailwind CSS. You can also use the AI tools to help you with code generation and design assistance as you build your website.
@@ -147,11 +145,19 @@ export default defineConfig({
 ---
 
 ## Building your website
-> Before starting to code, it's important to give the AI tool(s) a persona and a context to work with. This will help the AI tool understand your requirements and generate code that is more relevant to your needs. For example, you can give the AI tool the following persona and context: [Persona Prompt]()
+> Before starting to code, it's important to give the AI tool(s) a persona and a context to work with. This will help the AI tool understand your requirements and generate code that is more relevant to your needs. For example, you can give the AI tool the following persona and context: [Persona Prompt](Prompt-Library/Website-Builder/Persona-Prompt.md)
+
+### 1. Hero Section
+- This is the first and foremost important section of the website, it should always look catchy and attractive, it should be very intriguing and should make the user want to scroll down and explore the website.
+
+- Don't not hold yourself for Hero Section. Add animations, micro-interactions, and make it as attractive as possible. This is the first thing that the user will see when they visit your website, so make sure to make a good impression.
+
+- You can look the prompt is used to build the Hero Section here: [Hero Section Prompt](Prompt-Library/nowhere-fast-prompt.md#1.Hero-Section)
 
 
 
-> [!TIP]
+
+
 > Always keep the folder structure organized and clean. This will help you and others understand the code better and make it easier to maintain and update in the future. You can create separate folders for components, styles, assets, etc. to keep everything organized. 
 
 > [!TIP]
