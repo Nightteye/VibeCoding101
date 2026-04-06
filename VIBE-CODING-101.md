@@ -88,6 +88,8 @@ npm install
 npm run dev
 ```
 > This will start the development server and you can view your website at http://localhost:3000.
+
+## Setting up Tailwind CSS
 > Installing Tailwind CSS v4 with React and Vite:
 ```bash
 npm install tailwindcss @tailwindcss/vite
@@ -106,4 +108,6 @@ export default defineConfig({
   ],
 })
 ```
+
+# Now we have everything set up and we acn start coding the website. 
 
