@@ -387,5 +387,8 @@ placeholder comments — write every component in full.
 
 
 >[!NOTE]
-> The guide has not been fully completed yet, I will be adding more sections and tips as I go along. If you have any suggestions or resources that you think would be helpful, please feel free to share them with me.
+> The guide has not been fully completed yet, I will be adding more sections and tips as I go along. If you have any suggestions or resources that you think would be helpful, please feel free to share them with me. This message is temporary and will be removed once the guide is fully completed. You may see this message in future too, once the min guide is complete this message will be removed and the guide will be updated with more sections and tips.
 
+*Thank You*
+
+***Nighteye***
