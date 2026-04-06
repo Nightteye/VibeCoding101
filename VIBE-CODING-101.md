@@ -384,7 +384,7 @@ placeholder comments — write every component in full.
 > [!TIP]
 > Always use the Console and Network tabs in the browser developer tools to check for any errors or issues with your code. 90% of the bugs can be fixed by just checking the console, if you're an experienced developer, you can fix the bugs by yourself, but if you're a new developer/don't know any coding, just copy the console error and paste it in the AI Tool of your choice, and the AI tool will give you the full fixed file which you can copy and paste in your project.  
 
-
+---
 
 >[!NOTE]
 > The guide has not been fully completed yet, I will be adding more sections and tips as I go along. If you have any suggestions or resources that you think would be helpful, please feel free to share them with me. This message is temporary and will be removed once the guide is fully completed. You may see this message in future too, once the min guide is complete this message will be removed and the guide will be updated with more sections and tips.
