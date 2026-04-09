@@ -14,7 +14,7 @@ A collection of resources and tips for learning how to code and build websites. 
 > [!NOTE]
 > This is a work in progress. I will be adding more resources and tips as I go along. If you have any suggestions or resources that you think would be helpful, please feel free to share them with me.
 
-You can check out the [Vibe Coding 101](VIBE-CODING-101.md) guide for a step-by-step approach to learning how to vibe code and build websites. This guide covers everything from setting up your development environment to deploying your website and optimizing it for performance. It also includes tips and best practices for coding and web development, as well as resources for learning and improving your skills.
+You can check out the [Vibe Coding 101](index.md) guide for a step-by-step approach to learning how to vibe code and build websites. This guide covers everything from setting up your development environment to deploying your website and optimizing it for performance. It also includes tips and best practices for coding and web development, as well as resources for learning and improving your skills.
 
 ---
 
@@ -66,7 +66,6 @@ For handling any backend functionality and database management, including:
 
 ---
 
-[Click here to read the Vibe Coding 101 guide](VIBE-CODING-101.md)
 
 Thanks for reading,
 
