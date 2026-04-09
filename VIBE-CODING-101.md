@@ -67,6 +67,21 @@ Once you understand the design, try to create a wireframe or a mockup of your we
 - You can use tools like [Figma](https://www.figma.com/), [Sketch](https://www.sketch.com/), [Adobe XD](https://adobexdplatform.com/), [Google Stitch](https://stitch.withgoogle.com/) etc. to create your wireframe or mockup.
 - You can also use pen and paper to create your wireframe or mockup.
 
+**Accessibility Fundamentals**
+
+- Use semantic HTML elements to improve accessibility and SEO.
+- Add `alt` text to all images to provide context for screen readers.
+- Proper Heading hierarchy (H1, H2, H3, etc.) to structure your content and improve readability.
+- Keyboard Navigation: Ensure that all interactive elements (like buttons, links, forms) are accessible via keyboard navigation (using Tab, Enter, etc.).
+- Color Contrast: Ensure sufficient color contrast between text and background to improve readability for users with visual impairments.
+- ARIA Attributes: Use ARIA attributes to enhance accessibility for users with assistive technologies (e.g., `aria-label`, `aria-hidden`, etc.).
+- Focus states on interactive elements to provide visual feedback when they are focused (e.g., when navigating with a keyboard).
+
+Here is an example for the wireframe of a simple website in this file: [Wireframe Example](code-blocks/wireframe.md). This is just a basic example, you can create more complex and detailed wireframes based on your design and requirements.
+
+>[!TIP]
+> If you can't use your site with just a keyboard, it's not accessible!
+
 ---
 
 ## Setting up your development environment
@@ -236,6 +251,42 @@ Always keep the folder structure organized and clean. This will help you and oth
 
 ---
 
+## Image Optimization
+
+- Use modern image formats like WebP for better compression and faster loading times.
+- Compress your images using tools like [TinyPNG](https://tinypng.com/) or [ImageOptim](https://imageoptim.com/) to reduce file size without losing quality.
+- Lazy load images using the `loading="lazy"` attribute to improve page load performance.
+- Responsive images: Use the `srcset` attribute to serve different image sizes based on the user's device and screen resolution.
+- Store images in /public folder and reference them using relative paths in your components.
+- Use [CDNs](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/) for hosting your images to improve loading times and reduce server load.
+
+Example for image optimization or responsive images can be found in this [file](code-blocks/image-optimization.md).
+
+>[!TIP]
+> Compress images to under 200KB when possible
+
+---
+
+## Environment Variables
+- What are environment variables? 
+> Environment variables are variables that are set outside of your code and can be accessed in your code. They are often used to store sensitive information like API keys, database credentials, etc. In a React project, you can create a `.env` file in the root of your project and add your environment variables there. 
+
+- Create a .enc file in the root of your project and add your environment variables there.
+
+- Vite Syntax for environment variables: `VITE_` prefix is required for environment variables in Vite. 
+
+- Accessing environment variables in your code: You can access your environment variables in your code using `import.meta.env.VITE_YOUR_VARIABLE_NAME`. For example, if you have an environment variable called `VITE_API_KEY`, you can access it in your code like this: `const apiKey = import.meta.env.VITE_API_KEY;`.
+
+Here is the example of how the [`.env`](code-blocks/.env) file should look like
+
+And here is how you can access the [environment variables in your React app](code-blocks/env.md#using-environment-variables-in-your-react-app).
+
+
+> [!TIP]
+> Never commit your `.env` file to GitHub or any public repo 
+
+---
+
 ## Setting up CSS Variables [Edited by AI]
 
 It's a good practice to use CSS variables for your colors, fonts, and other design tokens. This will make it easier to maintain and update your styles in the future. You can define your CSS variables in your index.css file like this:
@@ -261,6 +312,74 @@ This will make it easier to maintain and update your styles in the future. If yo
 
 ---
 
+## Responsive Design Basics
+
+- Use Tailwind's responsive utility classes to create a mobile-first design. For example, `sm:bg-red-500` will apply a red background on small screens and above.
+- Use Flexbox and Grid for layout to create flexible and responsive designs.
+- Test your design on different screen sizes to ensure it looks good on all devices.
+- Use media queries for any custom styles that need to be applied at specific breakpoints.
+- Tailwind breakpoints: sm:, md:, lg:, xl:, 2xl:
+  - `sm:` applies styles at 640px and above
+  - `md:` applies styles at 768px and above
+  - `lg:` applies styles at 1024px and above
+  - `xl:` applies styles at 1280px and above
+  - `2xl:` applies styles at 1536px and above
+- Use Hamburger menu for navigation on smaller screens and a horizontal menu for larger screens.
+
+> [!TIP]
+> Always check your site on mobile before deploying!
+
+---
+
+## React Router Setup 
+
+We use React Router to handle navigation between different pages in our website. It helps to navigate between different components and pages without reloading the entire page. To set up React Router, you can follow these steps:
+
+1. Install React Router: `npm install react-router-dom`
+2. Create a `Router` component in your `App.jsx` file and wrap your routes with it:
+
+```jsx
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        {/* Add more routes as needed */}
+      </Switch>
+    </Router>
+  );
+}
+``` 
+- Create separate components for each page (e.g., Home.jsx, About.jsx, Contact.jsx) and import them in your `App.jsx` file.
+- Use `Link` components from React Router to navigate between pages without reloading:
+
+```jsx
+import { Link } from 'react-router-dom';
+function Navbar() {
+  return (
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/contact">Contact</Link>
+    </nav>
+  );
+}
+```
+- 404 Page: You can create a 404 page for any undefined routes by adding a catch-all route at the end of your `Switch`:
+
+```jsx
+<Route path="*" component={NotFound} />
+```
+This will render the `NotFound` component for any routes that do not match the defined routes.
+
+>[!TIP]
+> Use <Link> not <a> to avoid page reloads.
+
+---
+
 ## Building Your Website: Tips & Best Practices
 
 > [!TIP]
@@ -279,6 +398,38 @@ You can find the prompt I used to build this website here: [Nowhere Fast Prompt]
 
 I used Claude to generate the whole website in this case, but you can also use Google Gemini for the initial code generation and then switch to Claude for any further improvements and optimizations.
 
+
+### Form Handling
+
+**Basic Form Handling**: In React can be done using the `useState` hook to manage form state and handle input changes. Here's a simple example of how to create a [contact form](code-blocks/form.md) in React.
+
+**Handling Form Submission**: When the form is submitted, you can prevent the default behavior and handle the form data as needed. You can send the form data to an API, display a success message, or perform any other actions based on your requirements.
+
+**Form Validation**: You can implement form validation to ensure that the user enters valid data before submitting the form. This can be done by adding validation logic to the `handleChange` and `handleSubmit` functions. You can also use libraries like Formik or React Hook Form to simplify form handling and validation in React.
+
+**Showing Form Errors**: You can display validation errors to the user by updating the form state and rendering error messages based on the validation results.
+
+**Showing Success Messages**: You can display success messages to the user when the form is submitted successfully. This can be done by updating the form state and rendering a success message based on the submission results.
+
+You can see the full code for the contact form in this [file](code-blocks/contact-form.md). This is just a basic example, you can customize it and add more features as needed (e.g., adding more form fields, integrating with an API, adding loading states, etc.).
+
+> [!TIP]
+> Always validate on both frontend AND backend
+
+
+### Loading States and User Feedback
+
+- Show loading spinners or skeleton screens while data is being fetched or processed to improve user experience.
+- Disable form inputs and buttons while a form submission is in progress to prevent duplicate submissions.
+- Show success messages or error messages based on the outcome of user actions (e.g., form submission, API calls, etc.).
+- Skeleton Loaders for better UX: Use skeleton loaders to indicate that content is loading, which can improve perceived performance and user experience.
+- Progress Indicators: For longer processes (like file uploads or multi-step forms), consider using progress indicators to show users how far along they are in the process.
+
+Here is an example of how to implement loading states and user feedback in a React component: [Loading States Example](code-blocks/loading-states.md).
+
+>[!TIP]
+> Never leave users guessing if something is working! Always provide feedback for their actions.
+
 ---
 
 ## Debugging the Website
@@ -289,6 +440,20 @@ Once the basic website is ready, there will be a lot of bugs and issues which yo
 > Always use the Console and Network tabs in the browser developer tools to check for any errors or issues with your code. 90% of the bugs can be fixed by just checking the console, if you're an experienced developer, you can fix the bugs by yourself, but if you're a new developer/don't know any coding, just copy the console error and paste it in the AI Tool of your choice, and the AI tool will give you the full fixed file which you can copy and paste in your project.
 
 ---
+
+## Basic Error Handling
+
+- **React Error Boundaries**: You can use React's Error Boundaries to catch JavaScript errors anywhere in your component tree and display a fallback UI instead of crashing the entire app. This is useful for handling unexpected errors gracefully.
+
+- **Try-Catch Blocks**: You can use try-catch blocks in your event handlers or async functions to catch and handle errors. This allows you to display error messages to the user or perform any necessary cleanup.
+
+- **Fallback UI**: You can create a fallback UI component that displays an error message or a user-friendly message when an error occurs. This can be used in conjunction with Error Boundaries or try-catch blocks to provide a better user experience.
+
+- **Console Logging**: Always log errors to the console for debugging purposes. This will help you identify and fix issues in your code more efficiently.
+
+- **Showing Errors**: Try to show user-friendly error messages instead of technical error messages. This will help users understand what went wrong and how they can fix it.
+
+- Example of using Error Boundaries and try-catch blocks can be found in this [file](code-blocks/error-msg.md). 
 
 ## Deploying the Website
 
@@ -326,6 +491,49 @@ Now, that you have your website ready with all the bugs fixed and everything wor
 
 > [!NOTE]
 > Use GitHub Pages if you want a simple and free hosting solution for your website, but keep in mind that it has some limitations (e.g., it only supports static sites, it does not support server-side rendering, etc.). If you need more features and flexibility, I recommend using Vercel or Netlify for deployment.
+
+---
+
+## SEO Basics
+
+- Update `<title>` tag in your `index.html` file to improve search engine visibility.
+- Add meta description for better search engine results and to provide a summary of your website's content.
+- Add Open Graph tags to improve how your website looks when shared on social media platforms.
+- Add favicon to your website for better branding and recognition in browser tabs.
+- Use semantic HTML tags (e.g., `<header>`, `<main>`, `<footer>`, etc.) to improve accessibility and SEO.
+- Install `react-helmet` for managing changes to the document head, allowing you to update the title and meta tags dynamically based on the content of each page.
+
+Example of using `react-helmet` for SEO can be found in this [file](code-blocks/seo.md).
+
+>[!TIP]
+> Test how your site looks when shared on Twitter/Facebook
+
+---
+
+## Custom Domain Setup
+
+- Why use a custom domain? A custom domain gives your website a professional look and makes it easier for users to remember and access your site. It also allows you to create branded email addresses 
+- Buying a domain: You can buy domains from these registrars, they offer the best prices:
+  - [Namecheap](https://www.namecheap.com/)
+  - [Porkbun](https://porkbun.com/)
+  - [Hostinger](https://www.hostinger.com/domain-checker) *Hostinger provides regional pricing^, so if other registrars are more expensive, you might find a better deal*
+
+> [!NOTE]
+> If you're a student, and your enrolled in a university, you can get free domains from [GitHub Student Developer Pack](https://education.github.com/pack). It includes free domains from Namecheap and other benefits that can help you with your projects. Do check it out if you're eligible! ***Worth it!***
+
+
+- **Connecting to Vercel**: There are two ways to connect your domain to Vercel, first is 'DNS Records' and second is 'Nameservers'. Both have their own useability and advantages, you can choose the one that suits you best. You can find the detailed steps for both methods in this file: [Vercel Custom Domain Setup](code-blocks/vercel-domain.md).
+
+- **Connecting to Netlify**: Similar to Vercel, Netlify also provides two methods to connect your custom domain, 'DNS Records' and 'Nameservers'. You can find the detailed steps for both methods in this file: [Netlify Custom Domain Setup](code-blocks/netlify-domain.md).
+
+- It takes around 24-48 hours for the DNS changes to propagate, so be patient after setting up your custom domain. Once the propagation is complete, your website will be accessible through your custom domain.
+
+- SSL Certificates: Vercel provides free SSL certificates for your custom domain, so your website will be served over HTTPS automatically once the domain is connected. This ensures that your website is secure and provides a better experience for your users. 
+
+>[!TIP]
+> Use free hosting platforms like Vercel or Netlify, when you're new. You don't need professional hosting when you're just starting out. If you're website is starting to get a lot of traffic and you need more resources, then you can consider upgrading to a paid hosting plan or switching to a different hosting provider. But for most personal projects and portfolios, free hosting platforms like Vercel and Netlify are more than sufficient.
+
+
 
 ---
 
