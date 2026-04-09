@@ -102,7 +102,7 @@ Once you understand the design, try to create a wireframe or a mockup of your we
 - ARIA Attributes: Use ARIA attributes to enhance accessibility for users with assistive technologies (e.g., `aria-label`, `aria-hidden`, etc.).
 - Focus states on interactive elements to provide visual feedback when they are focused (e.g., when navigating with a keyboard).
 
-Here is an example for the wireframe of a simple website in this file: [Wireframe Example](code-blocks/wireframe.md). This is just a basic example, you can create more complex and detailed wireframes based on your design and requirements.
+Here is an example for the wireframe of a simple website in this file: [Wireframe Example](/code-blocks/wireframe.md). This is just a basic example, you can create more complex and detailed wireframes based on your design and requirements.
 
 >[!TIP]
 > If you can't use your site with just a keyboard, it's not accessible!
@@ -285,7 +285,7 @@ Always keep the folder structure organized and clean. This will help you and oth
 - Store images in /public folder and reference them using relative paths in your components.
 - Use [CDNs](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/) for hosting your images to improve loading times and reduce server load.
 
-Example for image optimization or responsive images can be found in this [file](code-blocks/image-optimization.md).
+Example for image optimization or responsive images can be found in this [file](/code-blocks/image-optimization.md).
 
 >[!TIP]
 > Compress images to under 200KB when possible
@@ -302,9 +302,9 @@ Example for image optimization or responsive images can be found in this [file](
 
 - Accessing environment variables in your code: You can access your environment variables in your code using `import.meta.env.VITE_YOUR_VARIABLE_NAME`. For example, if you have an environment variable called `VITE_API_KEY`, you can access it in your code like this: `const apiKey = import.meta.env.VITE_API_KEY;`.
 
-Here is the example of how the [`.env`](code-blocks/.env) file should look like
+Here is the example of how the [`.env`](/code-blocks/.env) file should look like
 
-And here is how you can access the [environment variables in your React app](code-blocks/env.md#using-environment-variables-in-your-react-app).
+And here is how you can access the [environment variables in your React app](/code-blocks/env.md#using-environment-variables-in-your-react-app).
 
 
 > [!TIP]
@@ -426,7 +426,7 @@ I used Claude to generate the whole website in this case, but you can also use G
 
 ### Form Handling
 
-**Basic Form Handling**: In React can be done using the `useState` hook to manage form state and handle input changes. Here's a simple example of how to create a [contact form](code-blocks/form.md) in React.
+**Basic Form Handling**: In React can be done using the `useState` hook to manage form state and handle input changes. Here's a simple example of how to create a [contact form](/code-blocks/form.md) in React.
 
 **Handling Form Submission**: When the form is submitted, you can prevent the default behavior and handle the form data as needed. You can send the form data to an API, display a success message, or perform any other actions based on your requirements.
 
@@ -436,7 +436,7 @@ I used Claude to generate the whole website in this case, but you can also use G
 
 **Showing Success Messages**: You can display success messages to the user when the form is submitted successfully. This can be done by updating the form state and rendering a success message based on the submission results.
 
-You can see the full code for the contact form in this [file](code-blocks/contact-form.md). This is just a basic example, you can customize it and add more features as needed (e.g., adding more form fields, integrating with an API, adding loading states, etc.).
+You can see the full code for the contact form in this [file](/code-blocks/contact-form.md). This is just a basic example, you can customize it and add more features as needed (e.g., adding more form fields, integrating with an API, adding loading states, etc.).
 
 > [!TIP]
 > Always validate on both frontend AND backend
@@ -450,7 +450,7 @@ You can see the full code for the contact form in this [file](code-blocks/contac
 - Skeleton Loaders for better UX: Use skeleton loaders to indicate that content is loading, which can improve perceived performance and user experience.
 - Progress Indicators: For longer processes (like file uploads or multi-step forms), consider using progress indicators to show users how far along they are in the process.
 
-Here is an example of how to implement loading states and user feedback in a React component: [Loading States Example](code-blocks/loading-states.md).
+Here is an example of how to implement loading states and user feedback in a React component: [Loading States Example](/code-blocks/loading-states.md).
 
 >[!TIP]
 > Never leave users guessing if something is working! Always provide feedback for their actions.
@@ -478,7 +478,7 @@ Once the basic website is ready, there will be a lot of bugs and issues which yo
 
 - **Showing Errors**: Try to show user-friendly error messages instead of technical error messages. This will help users understand what went wrong and how they can fix it.
 
-- Example of using Error Boundaries and try-catch blocks can be found in this [file](code-blocks/error-msg.md). 
+- Example of using Error Boundaries and try-catch blocks can be found in this [file](/code-blocks/error-msg.md). 
 
 ## Deploying the Website
 
@@ -528,7 +528,7 @@ Now, that you have your website ready with all the bugs fixed and everything wor
 - Use semantic HTML tags (e.g., `<header>`, `<main>`, `<footer>`, etc.) to improve accessibility and SEO.
 - Install `react-helmet` for managing changes to the document head, allowing you to update the title and meta tags dynamically based on the content of each page.
 
-Example of using `react-helmet` for SEO can be found in this [file](code-blocks/seo.md).
+Example of using `react-helmet` for SEO can be found in this [file](/code-blocks/seo.md).
 
 >[!TIP]
 > Test how your site looks when shared on Twitter/Facebook
@@ -547,9 +547,9 @@ Example of using `react-helmet` for SEO can be found in this [file](code-blocks/
 > If you're a student, and your enrolled in a university, you can get free domains from [GitHub Student Developer Pack](https://education.github.com/pack). It includes free domains from Namecheap and other benefits that can help you with your projects. Do check it out if you're eligible! ***Worth it!***
 
 
-- **Connecting to Vercel**: There are two ways to connect your domain to Vercel, first is 'DNS Records' and second is 'Nameservers'. Both have their own useability and advantages, you can choose the one that suits you best. You can find the detailed steps for both methods in this file: [Vercel Custom Domain Setup](code-blocks/vercel-domain.md).
+- **Connecting to Vercel**: There are two ways to connect your domain to Vercel, first is 'DNS Records' and second is 'Nameservers'. Both have their own useability and advantages, you can choose the one that suits you best. You can find the detailed steps for both methods in this file: [Vercel Custom Domain Setup](/code-blocks/vercel-domain.md).
 
-- **Connecting to Netlify**: Similar to Vercel, Netlify also provides two methods to connect your custom domain, 'DNS Records' and 'Nameservers'. You can find the detailed steps for both methods in this file: [Netlify Custom Domain Setup](code-blocks/netlify-domain.md).
+- **Connecting to Netlify**: Similar to Vercel, Netlify also provides two methods to connect your custom domain, 'DNS Records' and 'Nameservers'. You can find the detailed steps for both methods in this file: [Netlify Custom Domain Setup](/code-blocks/netlify-domain.md).
 
 - It takes around 24-48 hours for the DNS changes to propagate, so be patient after setting up your custom domain. Once the propagation is complete, your website will be accessible through your custom domain.
 
