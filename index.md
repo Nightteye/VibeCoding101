@@ -53,15 +53,15 @@ Before even starting a single line of code, explore designs.
 
 - You can choose your own designs.
 - Here are all the Designs you can use:
-  - [Neubrutalism](./Designs/neubrutalism/)
-  - [Minimalism](./Designs/minimalism/)
-  - [Material Design](./Designs/material-design/)
-  - [Flat Design](./Designs/flat-design/)
-  - [Skeuomorphism](./Designs/skeuomorphism/)
-  - [Brutalism](./Designs/brutalism/)
-  - [Neumorphism](./Designs/neumorphism/)
-  - [Glassmorphism](./Designs/glassmorphism/)
-  - [Liquid Glass](./Designs/liquid-glass/)
+  - [Neubrutalism](/Designs/neubrutalism/index.html)
+  - [Minimalism](/Designs/minimalism/index.html)
+  - [Material Design](/Designs/material-design/index.html)
+  - [Flat Design](/Designs/flat-design/index.html)
+  - [Skeuomorphism](/Designs/skeuomorphism/index.html)
+  - [Brutalism](/Designs/brutalism/index.html)
+  - [Neumorphism](/Designs/neumorphism/index.html)
+  - [Glassmorphism](/Designs/glassmorphism/index.html)
+  - [Liquid Glass](/Designs/liquid-glass/index.html)
   - etc.
 
 You can also find designs on websites like:
